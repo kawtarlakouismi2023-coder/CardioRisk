@@ -109,7 +109,7 @@ Dans ce dataset, les patients `target = 1` ont une fréquence cardiaque maximale
 
 Si votre enseignant utilise la convention inverse, changez `VALEUR_A_RISQUE = 0` en `1` au début de `train_model.py`, puis relancez `train_model.py`.
 
-## 10. Présenter le projet (3 minutes)
+## 10. Présenter le projet
 
 1. **Le problème** : estimer le risque cardiaque d'un patient à partir de 13 mesures médicales.
 2. **Les données** : 303 patients, 13 variables, une étiquette (à risque ou non).
