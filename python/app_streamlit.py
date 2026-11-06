@@ -1,5 +1,4 @@
-# app_streamlit.py - Interface CardioRisk
-# Lancer :  streamlit run app_streamlit.py
+
 import os
 
 import joblib
