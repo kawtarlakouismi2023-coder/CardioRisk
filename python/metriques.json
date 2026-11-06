@@ -1,0 +1,18 @@
+{
+  "precision_globale": 0.82,
+  "precision_positifs": 0.793,
+  "rappel": 0.821,
+  "matrice_confusion": [
+    [
+      27,
+      6
+    ],
+    [
+      5,
+      23
+    ]
+  ],
+  "patients_entrainement": 241,
+  "patients_test": 61,
+  "valeur_a_risque": 0
+}
