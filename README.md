@@ -118,9 +118,3 @@ Si votre enseignant utilise la convention inverse, changez `VALEUR_A_RISQUE = 0`
 5. **La mise en ligne** : l'application est publiée gratuitement et accessible avec un simple lien.
 6. **Les limites** : petit dataset, pas de validation clinique : outil pédagogique, pas un diagnostic.
 
-**Questions possibles du jury**
-- *Pourquoi la régression logistique et pas linéaire ?* Pour obtenir une probabilité entre 0 et 1 pour une réponse oui/non.
-- *Pourquoi un jeu de test ?* Pour mesurer la performance sur des données jamais vues.
-- *Pourquoi standardiser ?* Pour que les variables à grande échelle n'écrasent pas les autres.
-- *Pourquoi Streamlit ?* Une seule technologie Python pour l'interface et le modèle : simple à développer, à expliquer et à publier.
-- *Quelles améliorations ?* Plus de données, comparer d'autres modèles (KNN, arbre de décision), enregistrer les prédictions dans une base SQL, ajouter une API et une interface Java JEE.
