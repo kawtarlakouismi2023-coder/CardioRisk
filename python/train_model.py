@@ -1,15 +1,4 @@
-"""
-CardioRisk - ETAPE 1 : entrainement et test de la regression logistique
-=======================================================================
-Ce script fait 5 choses :
-  1. Lire le fichier CSV
-  2. Separer les donnees : 80 % pour apprendre, 20 % pour tester
-  3. Entrainer une regression logistique (avec standardisation)
-  4. Tester le modele sur les 20 % jamais vus et afficher les resultats
-  5. Sauvegarder le modele dans "modele.joblib" (utilise ensuite par api.py)
 
-Lancer :  python train_model.py
-"""
 import json
 import os
 
