@@ -1,6 +1,5 @@
 
 import os
-
 import joblib
 import pandas as pd
 import streamlit as st
@@ -10,8 +9,7 @@ DOSSIER = os.path.dirname(os.path.abspath(__file__))
 st.set_page_config(page_title="CardioRisk", page_icon="💗")
 
 # ---------------------------------------------------------------
-# 1. COULEURS (le texte est forcé en foncé pour rester lisible,
-#    même si le navigateur est en mode sombre)
+# 1. COULEURS 
 # ---------------------------------------------------------------
 FOND = "#FFF5F7"         # fond principal
 FOND2 = "#FFE4EB"        # fond secondaire (formulaire)
