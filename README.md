@@ -4,7 +4,7 @@ Application web qui estime le **risque cardiaque** d'un patient à partir de **1
 
 > Outil pédagogique : le résultat n'est **pas** un diagnostic médical.
 
-**Application en ligne :** *(collez ici votre lien `https://xxxx.streamlit.app`)*
+**Application en ligne :** *(collez ici votre lien `https://cardiorisk-utdkrdzrjfpeaas8aqjjuk.streamlit.app/`)
 
 ## 1. Comment ça marche
 
