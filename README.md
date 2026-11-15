@@ -1,11 +1,5 @@
 # 💗 CardioRisk – Prédiction du risque cardiaque
 
-Application web qui estime le **risque cardiaque** d'un patient à partir de **13 mesures médicales**, grâce à une **régression logistique**.
-
-> Outil pédagogique : le résultat n'est **pas** un diagnostic médical.
-
-**Application en ligne :** *(collez ici votre lien `https://cardiorisk-utdkrdzrjfpeaas8aqjjuk.streamlit.app/`)
-
 ## 1. Comment ça marche
 
 ```
