@@ -1,6 +1,3 @@
-
-#Usage : streamlit run app_streamlit.py
-
 from pathlib import Path
 
 import joblib

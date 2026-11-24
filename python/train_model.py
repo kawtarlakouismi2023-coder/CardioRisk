@@ -1,6 +1,3 @@
-"""
-Lancer :  python train_model.py
-"""
 import json
 import os
 import joblib
@@ -11,14 +8,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.pipeline import make_pipeline
 from sklearn.preprocessing import StandardScaler
 
-# ---------------------------------------------------------------
-# REGLAGE IMPORTANT : quelle valeur de "target" signifie "a risque" ?
-# Dans ce dataset, les patients target = 0 ont plus d'angine d'effort,
-# plus de vaisseaux atteints et une frequence cardiaque max plus basse :
-# ce sont donc eux les patients a risque. Si vous utilisez
-# l'autre convention, mettez 1 ici et relancez le script.
 VALEUR_A_RISQUE = 0
-# ---------------------------------------------------------------
 
 DOSSIER = os.path.dirname(os.path.abspath(__file__))
 CSV = os.path.join(DOSSIER, "..", "data", "DataSet_CardioRisk.csv")
