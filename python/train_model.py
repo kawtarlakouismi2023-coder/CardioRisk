@@ -1,18 +1,8 @@
 """
-CardioRisk - ETAPE 1 : entrainement et test de la regression logistique
-=======================================================================
-Ce script fait 5 choses :
-  1. Lire le fichier CSV
-  2. Separer les donnees : 80 % pour apprendre, 20 % pour tester
-  3. Entrainer une regression logistique (avec standardisation)
-  4. Tester le modele sur les 20 % jamais vus et afficher les resultats
-  5. Sauvegarder le modele dans "modele.joblib" (utilise ensuite par api.py)
-
 Lancer :  python train_model.py
 """
 import json
 import os
-
 import joblib
 import pandas as pd
 from sklearn.linear_model import LogisticRegression
@@ -25,7 +15,7 @@ from sklearn.preprocessing import StandardScaler
 # REGLAGE IMPORTANT : quelle valeur de "target" signifie "a risque" ?
 # Dans ce dataset, les patients target = 0 ont plus d'angine d'effort,
 # plus de vaisseaux atteints et une frequence cardiaque max plus basse :
-# ce sont donc eux les patients a risque. Si votre enseignant utilise
+# ce sont donc eux les patients a risque. Si vous utilisez
 # l'autre convention, mettez 1 ici et relancez le script.
 VALEUR_A_RISQUE = 0
 # ---------------------------------------------------------------
@@ -35,7 +25,7 @@ CSV = os.path.join(DOSSIER, "..", "data", "DataSet_CardioRisk.csv")
 FICHIER_MODELE = os.path.join(DOSSIER, "modele.joblib")
 FICHIER_METRIQUES = os.path.join(DOSSIER, "metriques.json")
 
-# 1. Lecture des donnees (on retire le doublon)
+# 1. Lecture des donnees (on retire les doublons)
 donnees = pd.read_csv(CSV).drop_duplicates()
 print("Nombre de patients :", len(donnees))
 
